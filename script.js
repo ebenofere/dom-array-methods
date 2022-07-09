@@ -22,7 +22,7 @@ async function getRandomUser() {
 
   const newUser = {
     name: `${user.name.first} ${user.name.last}`,
-    money: Math.round(Math.random() * 1000),
+    money: Math.round(Math.random() * 1000000),
   };
 
   addData(newUser);
@@ -71,7 +71,7 @@ function doubleMoney() {
 
 // Filter only millionaires
 function showMillionaires() {
-  data = data.filter((user) => user.money > 1000000);
+  data = data.filter((unit) => unit.money > 1000000);
 
   updateDOM();
 }
@@ -86,7 +86,7 @@ function sortByRichest() {
 
 // Calculate total wealth
 function calculateWealth() {
-  const wealth = data.reduce((acc, user) => (acc += user.money), 0);
+  const wealth = data.reduce((acc, unit) => (acc += unit.money), 0);
 
   console.log(wealth, "total wealth calculation");
 
