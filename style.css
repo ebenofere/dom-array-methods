@@ -29,7 +29,6 @@ aside {
 }
 
 main {
-    border: 1px solid black;
     flex: 1;
     padding: 10px 20px;
 }
@@ -55,4 +54,11 @@ h2 {
     justify-content: space-between;
     font-weight: 300;
     margin: 0 0 20px;
+}
+
+.person {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
